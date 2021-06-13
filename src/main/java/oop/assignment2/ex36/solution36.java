@@ -55,7 +55,4 @@ public class solution36 {
             System.out.printf("The standard deviation is %2f",standardDev);
     }
 
-    public static void sort(){
-
-    }
 }
