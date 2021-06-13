@@ -13,7 +13,7 @@ public class solution29 {
             if(isValid(RateoReturn)){
                 int canuse=Integer.parseInt(RateoReturn);
                 int years = 72/canuse;
-                System.out.println("It will take 18 "+years+" to double your initial investment.");
+                System.out.println("It will take "+years+" years to double your initial investment.");
             }
             else{
             System.out.println("Sorry. That's not a valid input.");
