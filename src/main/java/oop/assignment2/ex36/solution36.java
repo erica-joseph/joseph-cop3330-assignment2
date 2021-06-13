@@ -1,6 +1,9 @@
 package oop.assignment2.ex36;
 
 import java.util.LinkedList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class solution36 {
@@ -27,11 +30,29 @@ public class solution36 {
               sum += numbers.get(i);
              }
 
+
+
+
             int size = numbers.size();
             double average = sum/size;
             System.out.println(numbers);
 
-            System.out.println(average);
+            int sum2 = 0;
+            for(i = 0; i <= 4; i++) {
+                //double standardDev = Math.pow((i - average),2);
+            sum2 += Math.pow((numbers.get(i) - average),2);
+            }
+            double standardDev = Math.sqrt((sum2/(size-1)));
+
+
+            numbers.sort(Comparator.reverseOrder());
+            System.out.println("after sorting: " + numbers);
+
+
+            System.out.println("The average is " + average);
+            System.out.println("The minimum is " + numbers.get(4));
+            System.out.println("The maximum is " + numbers.get(0));
+            System.out.printf("The standard deviation is %2f",standardDev);
     }
 
     public static void sort(){
