@@ -14,7 +14,7 @@ public class solution36 {
         LinkedList<Integer> numbers = new LinkedList<Integer>();
         //while (!insert.equals(" ")) {
 
-        while (i < 5) {
+        while (i < 4) {
             System.out.print("Enter a number: ");
             int insert = sc.nextInt();
             numbers.add(insert);
@@ -26,7 +26,7 @@ public class solution36 {
         //The maximum is 1000 sort -> last
         //The standard deviation is 353.55 ->
             int sum = 0;
-            for(i = 0; i <= 4; i++) {
+            for(i = 0; i <= 3; i++) {
               sum += numbers.get(i);
              }
 
@@ -38,7 +38,7 @@ public class solution36 {
             System.out.println(numbers);
 
             int sum2 = 0;
-            for(i = 0; i <= 4; i++) {
+            for(i = 0; i <= 3; i++) {
                 //double standardDev = Math.pow((i - average),2);
             sum2 += Math.pow((numbers.get(i) - average),2);
             }

@@ -6,7 +6,10 @@ public class solution33 {
         Scanner sc = new Scanner(System.in);
         System.out.println("What is your question?");
         String answer = sc.next();
+        response(answer);
+    }
 
+    public static void response(String answer){
         int number = 1 + (int) (4 * Math.random());
         int i;
         for (i = 1; i < 4; i++) {
