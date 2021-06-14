@@ -1,6 +1,9 @@
 package oop.assignment2.ex32;
 import java.util.Scanner;
-
+/*
+ *  UCF COP3330 Summer 2021 Assignment 1 Solution
+ *  Copyright 2021 Erica Joseph
+ */
 //add non-numeric entry partition
 public class solution32 {
     public static void main(String[] args) {

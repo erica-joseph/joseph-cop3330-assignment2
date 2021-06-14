@@ -1,5 +1,9 @@
 package oop.assignment2.ex34;
 
+/*
+ *  UCF COP3330 Summer 2021 Assignment 1 Solution
+ *  Copyright 2021 Erica Joseph
+ */
 //finish later
 
 import java.util.ArrayList;

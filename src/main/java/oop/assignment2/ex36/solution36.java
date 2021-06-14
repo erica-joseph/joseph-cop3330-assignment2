@@ -5,7 +5,10 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Arrays;
 import java.util.Scanner;
-
+/*
+ *  UCF COP3330 Summer 2021 Assignment 1 Solution
+ *  Copyright 2021 Erica Joseph
+ */
 public class solution36 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

@@ -1,6 +1,9 @@
 package oop.assignment2.ex25.base;
 import oop.assignment2.ex24.base.AnaDet;
-
+/*
+ *  UCF COP3330 Summer 2021 Assignment 1 Solution
+ *  Copyright 2021 Erica Joseph
+ */
 import java.util.Scanner;
 import java.lang.*;
 
