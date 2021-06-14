@@ -14,14 +14,13 @@ public class solution38 {
 
         LinkedList<String> evens = new LinkedList<String>();
 
+       System.out.print("The even numbers are ");
         for (int i = 0; i < chars.length; i++) {
             if (chars[i] % 2 == 0) {
-                System.out.print("This is an even nubmer");
-                evens.add(i,chars(i));
+                System.out.print(chars[i]+",");
             } else {
-                System.out.print("This is an odd number");
+
             }
         }
-        System.out.println(evens);
     }
 }
