@@ -45,7 +45,7 @@ public class solution36 {
                 //double standardDev = Math.pow((i - average),2);
             sum2 += Math.pow((numbers.get(i) - average),2);
             }
-            double standardDev = Math.sqrt((sum2/(size-1)));
+            double standardDev = Math.sqrt((sum2/(size)));
 
 
             numbers.sort(Comparator.reverseOrder());
