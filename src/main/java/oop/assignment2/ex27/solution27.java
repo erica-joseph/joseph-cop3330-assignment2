@@ -5,6 +5,8 @@ package oop.assignment2.ex27;
  *  Copyright 2021 Erica Joseph
  */
 
+import oop.assignment2.ex24.base.AnaDet;
+
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -24,7 +26,6 @@ public class solution27 {
         String zip = sc.next();
         System.out.println("Enter employee ID:");
         String Employee = sc.next();
-
         validateInput(firstname, lastname, zip, Employee);
     }
 

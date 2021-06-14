@@ -8,7 +8,7 @@ public class solution30 {
         int plants = 1;
         for(int i = 1; i <= 12; i++){
             sumLoop(i);
-            System.out.printf("%-10%s\n");
+            System.out.printf("%-10d\n");
         }
 
         }

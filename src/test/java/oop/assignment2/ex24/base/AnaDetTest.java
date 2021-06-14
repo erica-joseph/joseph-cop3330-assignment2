@@ -21,7 +21,7 @@ class AnaDetTest {
         AnaDet detector = new AnaDet();
 
         boolean actual = detector.isAna("note","done");
-        boolean expected = true;
+        boolean expected = false;
 
         assertFalse(actual);
     }

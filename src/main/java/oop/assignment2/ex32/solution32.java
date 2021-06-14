@@ -5,36 +5,37 @@ import java.util.Scanner;
 public class solution32 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-       player();
-
-    }
-
-    public static void player(){
-        Scanner sc = new Scanner(System.in);
         System.out.println("Let's play Guess the Number!");
         System.out.println("Enter the difficulty level (1, 2, or 3): ");
         int diff = sc.nextInt();
         System.out.println("I have my number. What's your guess? ");
+        int guess = sc.nextInt();
+        player(diff, guess);
+
+    }
+
+    public static void player(int diff, int guess){
+        Scanner sc = new Scanner(System.in);
         if(diff == 1){
-            easy();
+            easy(guess);
         }
         else if (diff ==2){
-            medium();
+            medium(guess);
         }
 
         else if (diff == 3){
-            hard();
+            hard(guess);
         }
         else {
             System.out.println("Please select a valid difficulty");
         }
     }
 
-    public static void easy() {
+    public static void easy(int guess) {
         Scanner sc = new Scanner(System.in);
         int number = 1 + (int) (10 * Math.random());
-        int i, guess;
-        for (i = 1; i < 10; i++) {
+        int i;
+        for (i = 1; i < 100; i++) {
             guess = sc.nextInt();
 
             if (number == guess) {
@@ -48,11 +49,11 @@ public class solution32 {
         }
     }
 
-    public static void medium() {
+    public static void medium(int guess) {
         Scanner sc = new Scanner(System.in);
         int number = 1 + (int) (100 * Math.random());
-        int i, guess;
-        for (i = 1; i < 10; i++) {
+        int i;
+        for (i = 1; i < 100; i++) {
             guess = sc.nextInt();
 
             if (number == guess) {
@@ -66,11 +67,11 @@ public class solution32 {
         }
     }
 
-    public static void hard() {
+    public static void hard(int guess) {
         Scanner sc = new Scanner(System.in);
         int number = 1 + (int) (100 * Math.random());
-        int i, guess;
-        for (i = 1; i < 10; i++) {
+        int i;
+        for (i = 1; i < 100; i++) {
             guess = sc.nextInt();
 
             if (number == guess) {

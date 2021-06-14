@@ -16,18 +16,22 @@ public class solution31 {
         System.out.printf("%-10s %-10s %-10s\n", "Intensity", "|", "Rate");
         //System.out.printf("%-10s %-10s %-10s\n", "_____", "|", "______");
 
+        bpmRate(age,rest);
+        //System.out.printf("%-10s %-10s %-10s\n", "i love", "bananas", "bananas", "bananas");
+
+    }
+
+    public static void bpmRate(int age, int resting){
+
         int inten = 50;
         for(int i = 0; i <= 8; i++) {
             inten = inten + 5;
             //double w = (inten*.01) * g;
-            double rate = (((220-age)-rest)*(inten*.01))+rest;
+            double rate = (((220-age)-resting)*(inten*.01))+resting;
             System.out.printf("%-10s %-10s %-10s\n", inten+"%","|", (int)rate+" bpm");
         }
         //System.out.printf("%-10s %-10s %-10s\n","Resting Pulse: ", "|", "Age: ");
 
-
-
-        //System.out.printf("%-10s %-10s %-10s\n", "i love", "bananas", "bananas", "bananas");
 
     }
 }

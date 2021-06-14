@@ -25,15 +25,15 @@ public class solution26 {
         //b=1+i
         //n = -(1/30) * log(a) / log(b)
 
-        double a = 1 + (bal/monPay)*(1-Math.pow((1+dayRate),30));
+        double a = 1 + (bal/monPay)*(1-Math.pow((1+(dayRate/365)),30));
         double b = 1+dayRate;
 
         double c = bal/monPay;
-        double d = 1-Math.pow((1+dayRate),30);
+        double d = 1-Math.pow((1+(dayRate/365)),30);
         double numMon = -(1/30)*(Math.log10(a)/Math.log10(b));
         System.out.println(a);
         System.out.println(c);
-        System.out.println(d);
+        System.out.println(numMon);
 
     }
 }
